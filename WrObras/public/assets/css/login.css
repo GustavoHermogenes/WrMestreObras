@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+header{
+    display: none !important;
+}
+footer{
+    display: none !important;
+}
+
+
+/* #region login */
+
+.bodyLogin{
+    background:
+    linear-gradient(180deg, #1f2b7b 0%, #ff5f13 100%),
+    linear-gradient(300deg, rgba(255, 255, 255, 0) 0%, #1f2b7b  100%);
+    background-blend-mode: overlay, overlay, overlay, multiply, normal;
+    max-height: 1000px;
+    height: 80vh;
+}
+
+.login{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.caixaLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 70%;
+    margin: 10% 30%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #0C003C;
+    box-shadow: 40px 40px 100px #ff5f13;
+    border-radius: 15px;
+}
+
+.logo {
+    height: 25%;
+}
+
+.logo img{
+    max-width:400px !important;
+}
+
+.input{
+    height: 50%;
+}
+.input i{
+    margin-left: -20px;
+}
+.caixaLogin input{
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    color: #fcfcfc;
+    border-bottom: solid 2px #7b411f;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-radius:5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.caixaLogin input:focus{
+    outline: none;
+    background: transparent !important;
+    color: #f4f4f4;
+    font-weight: 500;
+
+}
+
+
+.caixaLogin input[type="submit"]{
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #0e0468;
+    border: solid 2px #ff5f13;
+    box-shadow: none;
+}
+
+.caixaLogin input[type="submit"]:hover{
+    background-color: #0C003C;
+    color: #ff5f13;
+    border: solid 2px #ff5f13;
+    transition: ease-in .3s;
+    cursor: pointer;
+}
+
+.error{
+    color: #fff;
+}
+
+@media(max-width: 1000px){
+
+.caixaLogin{
+    width: 80%;
+    margin: 10%;
+}
+}
+
+/* #endregion login */
+
+
+/* #region admin */
+
+.headerAdmin{
+    display: flex;
+}
+
+.headerAdmin img{
+    max-width: 250px;
+    width: 80%;
+    max-height: 150px;
+}
+
+/* #endregion admin*/
